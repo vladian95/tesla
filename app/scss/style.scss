@@ -1,10 +1,36 @@
-html{
-    box-sizing: border-box;
+@import 'vars';
+@import 'global';
+@import 'fonts';
+
+.header{
+    height: 100vh;
 }
-*,
-*::before,
-*::after{
-    box-sizing: inherit;
+.header__top{
+    display: flex;
+    justify-content: space-between;
+    .header__btn{
+        height: 60px;
+        width: 60px;
+        border: 1px solid #fff;
+        margin-top: 31px;
+        background: rgba(255, 255, 255, 0.1);
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        div{
+            height: 2px;
+            width: 36px;
+            background-color: #fff;
+            margin: 5px 0;
+        }
+    }
+    .logo{
+        padding-top: 36px;
+        margin-bottom: 29px;
+    }
 }
+
 
 
