@@ -128,4 +128,29 @@
         }
     }
 }
-
+.advantages-inner-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+    position: relative;
+    .advantages__desc{
+        width: 100%;
+        max-width: 570px;
+    }
+    .advantages__title{
+        font-size: 36px;
+        line-height: 42px;
+        color: $red;
+        position: absolute;
+        top: 0;
+    }
+    .advantages__title-bottom{
+        right: 0;
+        bottom: 0;
+        top: auto;
+    }
+    .advantages__text{
+        width: 303px;
+    }
+}
