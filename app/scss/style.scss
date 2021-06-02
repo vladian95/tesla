@@ -4,6 +4,11 @@
 
 .header{
     height: 100vh;
+    position: absolute;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.3);
+    left: 0;
+    right: 0;
 }
 .header__top{
     display: flex;
@@ -31,6 +36,96 @@
         margin-bottom: 29px;
     }
 }
-
-
+.header__content{
+    .header__title{
+        font-family: 'Roboto', sans-serif;
+        font-size: 96px;
+        line-height: 112px;
+        margin-bottom: 40px;
+    }
+    .header__text{
+        width: 284px;
+        margin-bottom: 25px;
+    }
+    .header__content-btn{
+        border: 1px solid #fff;
+        padding: 30px 62px;
+        background: rgba(255, 255, 255, 0.15);
+        transition: all .3s;
+        &:hover{
+            background-color: $bg;
+        }
+    }
+}
+.slider__item{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.slider{
+    .slick-dots{
+        position: relative;
+        margin: -55px auto 0;
+        max-width: 1200px;
+        z-index: 6;
+        button{
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            background-color: $black;
+            border: none;
+            padding: 0;
+            font-size: 0;
+            cursor: pointer;
+            outline: none;
+        }
+        .slick-active{
+            button{
+                background-color: #fff;
+            }
+        }
+        li{
+            display: inline-block;
+            margin: 0px 5px;
+        }
+    }
+}
+.statistics{
+    margin: 160px 0px 100px;
+    img{
+        margin: 100px 0px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+.statistics__items{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    .statistics__item{
+        .statistics__item-num-plus{
+            position: relative;
+            &::before{
+                content: '+';
+                position: absolute;
+                top: -42px;
+                right: 53px;
+                font-size: 24px;
+            }
+        }
+        &-num{
+            font-size: 96px;
+            font-family: 'Roboto', sans-serif;
+            span{
+                font-size: 24px;
+                margin-left: -20px;
+            }
+        }
+        &-descr{
+            color: $red;
+        }
+    }
+}
 
