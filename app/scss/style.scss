@@ -47,7 +47,7 @@
         width: 284px;
         margin-bottom: 25px;
     }
-    .header__content-btn{
+    .page-btn{
         border: 1px solid #fff;
         padding: 30px 62px;
         background: rgba(255, 255, 255, 0.15);
@@ -95,9 +95,6 @@
     margin: 160px 0px 100px;
     img{
         margin: 100px 0px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
     }
 }
 .statistics__items{
@@ -152,5 +149,56 @@
     }
     .advantages__text{
         width: 303px;
+    }
+}
+.design__images{
+    margin-bottom: 100px;
+}
+.design__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.design__item{
+    max-width: 570px;
+    width: 100%;
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+    .design__item-num{
+        color: $red;
+    }
+    .design__item-text{
+        max-width: 431px;
+    }
+}
+.footer{
+    background-color: $bg;
+    padding: 83px 0px 20px;
+    text-align: center;
+    margin-top: 100px;
+    .footer__btn{
+        border: 1px solid #fff;
+        padding: 30px 62px;
+        background: rgba(255, 255, 255, 0.15);
+        transition: all .3s;
+        margin-bottom: 83px;
+        &:hover{
+            background-color: $bg;
+        }
+    }
+    .footer__copy{
+        font-weight: 700;
+        li{
+            display: inline-block;
+            padding: 0px 10px;
+            & + li{
+                position: relative;
+                &::before{
+                    content: '|';
+                    position: absolute;
+                    left: -5px;
+                }
+            }
+        }
     }
 }
